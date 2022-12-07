@@ -42,6 +42,7 @@ dependencies:
   font_awesome_flutter: '10.2.1'
   meta: ^1.8.0
   flutter_svg: ^1.1.6
+  animate_do: ^3.0.2
 
 dev_dependencies:
   flutter_test:

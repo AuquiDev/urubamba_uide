@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:urubamba_uide/Pages/restaurant_page.dart';
 import 'package:urubamba_uide/Pages/tabbar_page.dart/datail_page.dart';
 import 'package:urubamba_uide/Pages/muni_page.dart';
 import 'package:urubamba_uide/Provider/distrito_provider.dart';
@@ -294,7 +295,14 @@ class _HomePageState extends State<HomePage> {
                       height: 10,
                     ),
                     const CategoriasWidgets(),
-                    DetailPage(),
+                    // DetailPage(),
+                    ElevatedButton(onPressed: 
+                    (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>RestaurantsPage()));
+                    },
+                    child: Text('Restaurantes'),
+                    )
+                    
                   ],
                 ),
               ),
